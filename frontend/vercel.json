@@ -1,13 +1,12 @@
 {
     "version": 2,
+    "buildCommand": "npm install && npm run build",
+    "outputDirectory": "dist",
     "framework": "vite",
-    "public": true,
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/index.html"
         }
-    ],
-    "installCommand": "npm install",
-    "buildCommand": "npm run build"
+    ]
 }
